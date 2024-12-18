@@ -5,17 +5,7 @@ import '../css/HeroSection.css'; // Para estilos adicionales
 
 const HeroSection = () => {
   const { t } = useTranslation();
-  const handleScroll = (event) => {
-    event.preventDefault(); // Prevenir comportamiento predeterminado
-    const featuresSection = document.getElementById('features');
-    if (featuresSection) {
-      featuresSection.scrollIntoView({
-        behavior: 'smooth', // Desplazamiento suave
-        block: 'start', // Alinea al principio de la sección
-      });
-    }
-  };
-
+  
   return (
     <header className="hero-section d-flex align-items-center text-center text-white">
       <div className="container">

@@ -1,19 +1,35 @@
 .hero-section {
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    background: url('../assets/image.jpg') no-repeat center center/cover;
-    position: relative;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background: url('../assets/image.jpg') no-repeat center center/cover;
+  position: relative;
+  animation: fadeInBackground 2s ease-in-out; /* Animación inicial */
+  overflow: hidden;
+}
+
+/* Animación para el fondo (fade-in) */
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+    transform: scale(1.1); /* Inicia con un leve zoom */
   }
-  
-  .hero-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
-    z-index: 1;
+  to {
+    opacity: 1;
+    transform: scale(1); /* Regresa a su tamaño normal */
   }
+}
+
+/* Efecto Parallax */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece ligeramente la imagen */
+  z-index: 1;
+}
+
   
   .hero-section .container {
     z-index: 2;
@@ -59,4 +75,3 @@
     background-color: #27AE60; /* Más oscuro al pasar el mouse */
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
   }
-    

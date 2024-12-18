@@ -13,7 +13,13 @@ i18n
             title: "Automate Your Property Management",
             description: "Discover how Nebstala can transform your business with automation and efficiency.",
             button: "Learn More"
-          }
+          },
+          navbar: {
+            logo: "Nebstala",
+            features: "Features",
+            pricing: "Pricing",
+            contact: "Contact",
+          },
         }
       },
       es: {
@@ -22,7 +28,13 @@ i18n
             title: "Automatiza la gestión de tus propiedades",
             description: "Descubre cómo Nebstala puede transformar tu negocio con automatización y eficiencia.",
             button: "Saber más"
-          }
+          },
+          navbar: {
+            logo: "Nebstala",
+            features: "Características",
+            pricing: "Precios",
+            contact: "Contacto",
+          },
         }
       }
     },

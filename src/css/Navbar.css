@@ -1,0 +1,76 @@
+/* Navbar transparente al inicio */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+    color: #FFFFFF; /* Texto blanco */
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea sutil */
+  }
+  
+  /* Navbar al hacer scroll */
+  .navbar.scrolled {
+    background-color: #2C3E50; /* Azul medianoche sólido */
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Enlaces del Navbar */
+  .nav-link {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #2ECC71; /* Verde esmeralda */
+  }
+  
+  /* Logo */
+  .navbar-brand {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #2ECC71; /* Verde esmeralda */
+  }
+  
+  /* Botón del selector de idioma */
+  .dropdown-toggle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #2ECC71; /* Verde esmeralda */
+    color: #FFFFFF;
+  }
+  
+  /* Menú desplegable */
+  .dropdown-menu {
+    background-color: #2C3E50; /* Azul medianoche */
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dropdown-item {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #2ECC71; /* Verde esmeralda */
+    color: #FFFFFF;
+  }
+  
