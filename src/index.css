@@ -1,13 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Estilo general del cuerpo */
 body {
+  font-family: 'Roboto', sans-serif; /* Fuente principal */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #ECF0F1; /* Gris claro */
+  color: #2C3E50; /* Azul medianoche */
 }
+
+/* Encabezados elegantes */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif; /* Fuente elegante para encabezados */
+  color: #2C3E50; /* Azul medianoche */
+}
+
+/* Botones y elementos interactivos */
+button, .btn, .nav-link {
+  font-family: 'Poppins', sans-serif; /* Fuente moderna */
+}
+
+/* Otros textos */
+p, input, textarea {
+  font-family: 'Roboto', sans-serif; /* Fuente principal */
+}
+
+/* Opcional: Estilo para una sección específica */
+.features-section h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botón con hover suave */
+.btn-light {
+  border: 2px solid #2ECC71; /* Borde del botón */
 }
