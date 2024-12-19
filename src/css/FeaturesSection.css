@@ -1,0 +1,44 @@
+.features-section .feature-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .features-section .feature-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #2ECC71; /* Verde esmeralda */
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icon-container:hover {
+    background-color: #27AE60; /* Verde más oscuro */
+    transform: scale(1.1);
+  }
+  
+  .btn-primary {
+    background-color: #2ECC71;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #27AE60;
+    transform: scale(1.05);
+  }
+  

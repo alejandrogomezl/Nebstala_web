@@ -20,6 +20,42 @@ i18n
             pricing: "Pricing",
             contact: "Contact",
           },
+          features: {
+            title: "Key Features",
+            items: [
+              {
+                title: "Smart Automation",
+                description:
+                  "Control lights, climate, and access intelligently to provide comfort and efficiency.",
+              },
+              {
+                title: "Simplified Reservation Management",
+                description:
+                  "Easily manage bookings with an interactive calendar and clear availability view.",
+              },
+              {
+                title: "Keyless Access",
+                description:
+                  "Forget physical keys with smart locks that ensure security and convenience.",
+              },
+              {
+                title: "Customizable Invoicing",
+                description:
+                  "Create invoices tailored to the specific needs of each client.",
+              },
+              {
+                title: "Intelligent Energy Savings",
+                description:
+                  "Reduce costs with presence sensors and optimized lighting and climate systems.",
+              },
+              {
+                title: "Modular and Scalable System",
+                description:
+                  "Adapt Nebstala to the needs of your business as it grows.",
+              },
+            ],
+            moreInfo: "Lern more",
+          },
         }
       },
       es: {
@@ -34,6 +70,42 @@ i18n
             features: "Características",
             pricing: "Precios",
             contact: "Contacto",
+          },
+          features: {
+            title: "Características Principales",
+            items: [
+              {
+                title: "Automatización Domótica",
+                description:
+                  "Controla luces, climatización y accesos de forma inteligente para ofrecer comodidad y eficiencia.",
+              },
+              {
+                title: "Gestión de Reservas Simplificada",
+                description:
+                  "Administra reservas fácilmente con un calendario interactivo y visualización clara de la disponibilidad.",
+              },
+              {
+                title: "Acceso Sin Llaves",
+                description:
+                  "Olvídate de las llaves físicas con cerraduras inteligentes que garantizan seguridad y comodidad.",
+              },
+              {
+                title: "Facturación Personalizada",
+                description:
+                  "Crea facturas adaptadas a las necesidades específicas de cada cliente.",
+              },
+              {
+                title: "Ahorro Energético Inteligente",
+                description:
+                  "Reduce costos con sensores de presencia y sistemas optimizados de iluminación y climatización.",
+              },
+              {
+                title: "Sistema Modular y Escalable",
+                description:
+                  "Adapta Nebstala a las necesidades de tu negocio a medida que crece.",
+              },
+            ],
+            moreInfo: "Saber más",
           },
         }
       }
