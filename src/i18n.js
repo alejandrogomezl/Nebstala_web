@@ -147,6 +147,40 @@ i18n
               },
             ],
           },
+          faq: {
+            title: "Frequently Asked Questions",
+            items: [
+              {
+                question: "What devices are compatible?",
+                answer: "Nebstala works with most Zigbee and Tuya devices for seamless integration.",
+              },
+              {
+                question: "How secure is the automation?",
+                answer: "Our system uses encrypted communications and secure access control.",
+              },
+              {
+                question: "Can Nebstala be customized for my business?",
+                answer: "Yes, you can adapt the system to your specific needs and preferences.",
+              },
+            ],
+          },
+          faq: {
+            title: "Preguntas Frecuentes",
+            items: [
+              {
+                question: "¿Qué dispositivos son compatibles?",
+                answer: "Nebstala funciona con la mayoría de los dispositivos Zigbee y Tuya para una integración perfecta.",
+              },
+              {
+                question: "¿Qué tan segura es la automatización?",
+                answer: "Nuestro sistema utiliza comunicaciones encriptadas y control de acceso seguro.",
+              },
+              {
+                question: "¿Se puede personalizar Nebstala para mi negocio?",
+                answer: "Sí, puedes adaptar el sistema a tus necesidades y preferencias específicas.",
+              },
+            ],
+          },
         }
       }
     },
