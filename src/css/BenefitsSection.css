@@ -1,0 +1,45 @@
+.benefits-section {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #2c3e50; /* Azul medianoche */
+  }
+  
+  .benefit-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .benefit-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #2ecc71; /* Verde esmeralda */
+    border-radius: 50%;
+    color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icon-container:hover {
+    background-color: #27ae60; /* Verde más oscuro */
+    transform: scale(1.1);
+  }
+  
+  h2 {
+    font-family: 'Lora', serif;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #34495e;
+  }
+  

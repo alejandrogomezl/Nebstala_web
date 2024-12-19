@@ -56,6 +56,26 @@ i18n
             ],
             moreInfo: "Lern more",
           },
+          benefits: {
+            title: "Key Benefits",
+            items: [
+              {
+                title: "Time Savings",
+                description:
+                  "Reduce manual booking management and automate key tasks, saving up to 70% of your time.",
+              },
+              {
+                title: "Energy Efficiency",
+                description:
+                  "Save up to 30% on energy costs with smart sensors and consumption optimization.",
+              },
+              {
+                title: "Enhanced Experience",
+                description:
+                  "Provide comfort and security to guests with keyless access and advanced automation.",
+              },
+            ],
+          },
         }
       },
       es: {
@@ -106,6 +126,26 @@ i18n
               },
             ],
             moreInfo: "Saber más",
+          },
+          benefits: {
+            title: "Beneficios Clave",
+            items: [
+              {
+                title: "Ahorro de Tiempo",
+                description:
+                  "Reduce la gestión manual de reservas y automatiza tareas clave, ahorrando hasta un 70% de tiempo.",
+              },
+              {
+                title: "Eficiencia Energética",
+                description:
+                  "Ahorra hasta un 30% en costos de energía con sensores inteligentes y optimización del consumo.",
+              },
+              {
+                title: "Experiencia Mejorada",
+                description:
+                  "Proporciona comodidad y seguridad a los huéspedes con acceso sin llaves y automatización avanzada.",
+              },
+            ],
           },
         }
       }
