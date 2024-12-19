@@ -76,6 +76,26 @@ i18n
               },
             ],
           },
+          faq: {
+            title: "Frequently Asked Questions",
+            items: [
+              {
+                question: "What devices are compatible?",
+                answer:
+                  "Nebstala is compatible with smart lights, thermostats, locks, and other IoT devices using Zigbee or Tuya standards.",
+              },
+              {
+                question: "How secure is the automation system?",
+                answer:
+                  "We use encrypted communications and advanced protocols to ensure the security of your data and devices.",
+              },
+              {
+                question: "Can I customize Nebstala for my business?",
+                answer:
+                  "Yes, Nebstala is modular and can be adapted to your specific needs as your business grows.",
+              },
+            ],
+          },
         }
       },
       es: {
@@ -148,36 +168,22 @@ i18n
             ],
           },
           faq: {
-            title: "Frequently Asked Questions",
-            items: [
-              {
-                question: "What devices are compatible?",
-                answer: "Nebstala works with most Zigbee and Tuya devices for seamless integration.",
-              },
-              {
-                question: "How secure is the automation?",
-                answer: "Our system uses encrypted communications and secure access control.",
-              },
-              {
-                question: "Can Nebstala be customized for my business?",
-                answer: "Yes, you can adapt the system to your specific needs and preferences.",
-              },
-            ],
-          },
-          faq: {
             title: "Preguntas Frecuentes",
             items: [
               {
                 question: "¿Qué dispositivos son compatibles?",
-                answer: "Nebstala funciona con la mayoría de los dispositivos Zigbee y Tuya para una integración perfecta.",
+                answer:
+                  "Nebstala es compatible con luces inteligentes, termostatos, cerraduras y otros dispositivos IoT que utilicen Zigbee o Tuya.",
               },
               {
-                question: "¿Qué tan segura es la automatización?",
-                answer: "Nuestro sistema utiliza comunicaciones encriptadas y control de acceso seguro.",
+                question: "¿Qué tan seguro es el sistema de automatización?",
+                answer:
+                  "Utilizamos comunicaciones cifradas y protocolos avanzados para garantizar la seguridad de tus datos y dispositivos.",
               },
               {
-                question: "¿Se puede personalizar Nebstala para mi negocio?",
-                answer: "Sí, puedes adaptar el sistema a tus necesidades y preferencias específicas.",
+                question: "¿Puedo personalizar Nebstala para mi negocio?",
+                answer:
+                  "Sí, Nebstala es modular y se puede adaptar a tus necesidades específicas a medida que tu negocio crece.",
               },
             ],
           },
