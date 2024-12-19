@@ -10,8 +10,8 @@ i18n
       en: {
         translation: {
           hero: {
-            title: "Automate Your Property Management",
-            description: "Discover how Nebstala can transform your business with automation and efficiency.",
+            title: "Domotics and Management",
+            description: "Efficient technology to transform your property.",
             button: "Learn More"
           },
           navbar: {
@@ -81,8 +81,8 @@ i18n
       es: {
         translation: {
           hero: {
-            title: "Automatiza la gestión de tus propiedades",
-            description: "Descubre cómo Nebstala puede transformar tu negocio con automatización y eficiencia.",
+            title: "Domótica y Gestión",
+            description: "Tecnología eficiente para transformar tu propiedad.",
             button: "Saber más"
           },
           navbar: {
