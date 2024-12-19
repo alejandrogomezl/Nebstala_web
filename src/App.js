@@ -5,6 +5,10 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 
+document.addEventListener('selectstart', (e) => {
+  e.preventDefault();
+});
+
 const App = () => (
   <Router>
     <Navbar />
