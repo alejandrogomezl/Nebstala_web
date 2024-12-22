@@ -96,6 +96,29 @@ i18n
               },
             ],
           },
+          domotics: {
+            title: "Benefits of Home Automation",
+            description:
+              "Discover how Nebstala's home automation system can save energy, improve security, and simplify property management.",
+            benefits: [
+              {
+                title: "Energy Savings",
+                description:
+                  "Optimize energy use with smart sensors and presence detectors, reducing costs by up to 30%.",
+              },
+              {
+                title: "Security and Access",
+                description:
+                  "Keyless entry and smart locks ensure safety and convenience for property managers and guests.",
+              },
+              {
+                title: "Remote Management",
+                description:
+                  "Control lights, climate, and devices remotely, making property management easier and more efficient.",
+              },
+            ],
+            button: "Learn More",
+          },
         }
       },
       es: {
@@ -186,6 +209,29 @@ i18n
                   "Sí, Nebstala es modular y se puede adaptar a tus necesidades específicas a medida que tu negocio crece.",
               },
             ],
+          },
+          domotics: {
+            title: "Beneficios del Sistema Domótico",
+            description:
+              "Descubre cómo el sistema domótico de Nebstala puede ahorrar energía, mejorar la seguridad y simplificar la gestión de propiedades.",
+            benefits: [
+              {
+                title: "Ahorro Energético",
+                description:
+                  "Optimiza el uso de energía con sensores inteligentes y detectores de presencia, reduciendo costos hasta un 30%.",
+              },
+              {
+                title: "Seguridad y Acceso",
+                description:
+                  "Entrada sin llaves y cerraduras inteligentes garantizan seguridad y comodidad para gestores y huéspedes.",
+              },
+              {
+                title: "Gestión Remota",
+                description:
+                  "Controla luces, climatización y dispositivos de forma remota, facilitando la gestión de propiedades.",
+              },
+            ],
+            button: "Saber Más",
           },
         }
       }
