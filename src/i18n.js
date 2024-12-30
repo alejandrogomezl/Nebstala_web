@@ -21,6 +21,7 @@ i18n
             features: "Features",
             pricing: "Pricing",
             contact: "Contact",
+            domotics: "Domotics",
           },
           features: {
             title: "Key Features",
@@ -161,6 +162,7 @@ i18n
             features: "Características",
             pricing: "Precios",
             contact: "Contacto",
+            domotics: "Domótica",
           },
           features: {
             title: "Características Principales",

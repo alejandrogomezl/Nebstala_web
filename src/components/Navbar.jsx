@@ -1,17 +1,52 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-scroll';
+import { scroller } from 'react-scroll';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '../css/Navbar.css';
 import useScroll from '../hooks/useScroll';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const scrolled = useScroll();
+  const navigate = useNavigate();
+  const location = useLocation(); // Detectar la página actual
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  // Cambiar idioma
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setDropdownOpen(false);
+  };
+
+  // Navegar entre páginas y hacer scroll
+  const handleNavigation = (page, section) => {
+    if (page === 'details') {
+      // Si el botón es Domotics, redirige a /details y desplaza al inicio
+      navigate('/details');
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll al inicio
+      }, 100); // Espera para asegurar la carga del DOM
+    } else {
+      if (location.pathname !== `/${page}`) {
+        // Redirige primero si no estás en la página deseada
+        navigate(`/${page}`);
+        setTimeout(() => {
+          scrollToSection(section);
+        }, 500);
+      } else {
+        // Si ya estás en la página, solo hace scroll
+        scrollToSection(section);
+      }
+    }
+  };
+
+  // Función para desplazarse suavemente a una sección
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      duration: 500,
+      smooth: true,
+      offset: -70 // Ajuste para el tamaño del navbar fijo
+    });
   };
 
   return (
@@ -42,35 +77,34 @@ const Navbar = () => {
         {/* Enlaces */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
+            {/* Features */}
             <li className="nav-item">
-              <Link
-                to="features"
-                smooth={true}
-                duration={500}
-                className="nav-link"
+              <button
+                className="nav-link btn"
+                onClick={() => handleNavigation('', 'features')}
               >
                 {t('navbar.features')}
-              </Link>
+              </button>
             </li>
+
+            {/* Domotics (Redirige a /details y desplaza al inicio) */}
             <li className="nav-item">
-              <Link
-                to="pricing"
-                smooth={true}
-                duration={500}
-                className="nav-link"
+              <button
+                className="nav-link btn"
+                onClick={() => handleNavigation('details')}
               >
-                {t('navbar.pricing')}
-              </Link>
+                {t('navbar.domotics')}
+              </button>
             </li>
+
+            {/* Contact */}
             <li className="nav-item">
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-                className="nav-link"
+              <button
+                className="nav-link btn"
+                onClick={() => handleNavigation('', 'contact')}
               >
                 {t('navbar.contact')}
-              </Link>
+              </button>
             </li>
           </ul>
 
