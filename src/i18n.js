@@ -2,8 +2,6 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import domotics from './translations/domotics.json';
-
 i18n
   .use(LanguageDetector) // Detecta el idioma del navegador
   .use(initReactI18next)
@@ -148,6 +146,24 @@ i18n
               ]
             }
           },
+          climateControl: {
+            title: "Smart Climate Control for Energy Efficiency",
+            description: "Smart climate control systems provide a revolutionary way to manage air conditioning and heating in modern properties. By integrating intelligent thermostats and sensors for temperature and presence detection, property owners can significantly reduce energy consumption and enhance guest comfort. These systems automatically adjust the temperature based on occupancy, preventing energy waste caused by running air conditioners or heaters when rooms are unoccupied. The use of smart thermostats not only improves energy efficiency but also extends the lifespan of HVAC (Heating, Ventilation, and Air Conditioning) systems. By maintaining optimal settings, these devices reduce wear and tear, minimizing maintenance costs and the need for premature replacements. Additionally, presence sensors detect movements and adjust climate settings in real-time, ensuring rooms are only cooled or heated when needed. This proactive approach not only lowers operational costs but also contributes to a more sustainable and eco-friendly property management solution. Investing in smart climate control technologies is essential for short-term rental properties and hotels looking to modernize their operations. Guests benefit from increased comfort, while property managers enjoy reduced utility bills and simplified climate management.",
+            features: [
+              {
+                title: "Intelligent Temperature Control",
+                description: "Automatically adjusts temperature settings based on occupancy to avoid unnecessary energy consumption."
+              },
+              {
+                title: "Energy Efficiency Optimization",
+                description: "Reduces utility costs by up to 30% with smart sensors and automated settings."
+              },
+              {
+                title: "Extended Device Lifespan",
+                description: "Prevents overuse and overheating, protecting HVAC systems and minimizing maintenance needs."
+              }
+            ]
+          },
         }
       },
       es: {
@@ -288,6 +304,24 @@ i18n
                 }
               ]
             }
+          },
+          climateControl: {
+            title: "Control Climático Inteligente para Eficiencia Energética",
+            description: "Los sistemas de control climático inteligente ofrecen una solución revolucionaria para gestionar el aire acondicionado y la calefacción en propiedades modernas. Al integrar termostatos inteligentes y sensores para detectar temperatura y presencia, los propietarios pueden reducir significativamente el consumo energético y mejorar el confort de los huéspedes. Estos sistemas ajustan automáticamente la temperatura en función de la ocupación, evitando el desperdicio de energía causado por mantener encendidos los aires acondicionados o calefactores cuando las habitaciones están vacías. El uso de termostatos inteligentes no solo mejora la eficiencia energética, sino que también prolonga la vida útil de los sistemas HVAC. Al mantener configuraciones óptimas, estos dispositivos reducen el desgaste, minimizando los costos de mantenimiento y la necesidad de reemplazos prematuros. Además, los sensores de presencia detectan movimientos y ajustan el clima en tiempo real, asegurando que las habitaciones solo se enfríen o calienten cuando sea necesario. Este enfoque proactivo no solo reduce los costos operativos, sino que también contribuye a una gestión de propiedades más sostenible y ecológica.",
+            features: [
+              {
+                title: "Control Inteligente de Temperatura",
+                description: "Ajusta automáticamente la temperatura según la ocupación para evitar el consumo innecesario de energía."
+              },
+              {
+                title: "Optimización de la Eficiencia Energética",
+                description: "Reduce los costos de energía hasta un 30% con sensores inteligentes y configuraciones automatizadas."
+              },
+              {
+                title: "Mayor Durabilidad de los Dispositivos",
+                description: "Evita el uso excesivo y el sobrecalentamiento, protegiendo los sistemas HVAC y minimizando las necesidades de mantenimiento."
+              }
+            ]
           },
         }
       }
