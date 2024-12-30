@@ -164,6 +164,24 @@ i18n
               }
             ]
           },
+          smartLocks: {
+            title: "Smart Locks and Secure Access",
+            description: "Enhance security and convenience with smart locks that use unique codes for each guest. Smart locks eliminate the need for physical keys, streamline check-ins, and improve property management efficiency.",
+            features: [
+              {
+                title: "Unique Guest Codes",
+                description: "Generate secure, time-limited access codes for each guest to simplify check-ins and check-outs."
+              },
+              {
+                title: "Keyless Entry",
+                description: "Remove the hassle of lost keys with keyless access using smart locks and mobile apps."
+              },
+              {
+                title: "Enhanced Security",
+                description: "Monitor and manage access logs remotely, ensuring greater security and control over your property."
+              }
+            ]
+          },
         }
       },
       es: {
@@ -323,6 +341,24 @@ i18n
               }
             ]
           },
+          smartLocks: {
+            title: "Cerraduras Inteligentes y Acceso Seguro",
+            description: "Mejora la seguridad y la comodidad con cerraduras inteligentes que utilizan códigos únicos para cada huésped. Estas cerraduras eliminan la necesidad de llaves físicas, simplifican el proceso de check-in y check-out, y optimizan la gestión de propiedades.",
+            features: [
+              {
+                title: "Códigos Únicos para Huéspedes",
+                description: "Genera códigos seguros y con tiempo limitado para cada huésped, simplificando los procesos de entrada y salida."
+              },
+              {
+                title: "Entrada sin Llaves",
+                description: "Evita problemas con llaves perdidas gracias al acceso sin llaves mediante cerraduras inteligentes y aplicaciones móviles."
+              },
+              {
+                title: "Seguridad Mejorada",
+                description: "Monitorea y gestiona registros de acceso de forma remota, garantizando mayor seguridad y control sobre su propiedad."
+              }
+            ]
+          },          
         }
       }
     },
