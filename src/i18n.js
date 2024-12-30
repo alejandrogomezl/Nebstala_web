@@ -2,6 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+import domotics from './translations/domotics.json';
+
 i18n
   .use(LanguageDetector) // Detecta el idioma del navegador
   .use(initReactI18next)
@@ -119,6 +121,7 @@ i18n
             ],
             button: "Learn More",
           },
+          domoticsPage: domotics.en,
         }
       },
       es: {
@@ -233,6 +236,7 @@ i18n
             ],
             button: "Saber Más",
           },
+          domoticsPage: domotics.es,
         }
       }
     },

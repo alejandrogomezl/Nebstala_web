@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faBolt, faSmile } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
+// Íconos para cada beneficio
 const icons = [faClock, faBolt, faSmile];
 
 const BenefitsSection = () => {
@@ -11,8 +12,12 @@ const BenefitsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation();
 
-  const benefits = t('benefits.items', { returnObjects: true });
+  // Obtener los datos de beneficios desde las traducciones
+  const benefitsData = t('benefits', { returnObjects: true }) || {};
+  const title = benefitsData.title || '';
+  const benefits = benefitsData.items || []; // Garantiza que sea un array
 
+  // Animación al hacer scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -20,7 +25,7 @@ const BenefitsSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 } // Activa las animaciones cuando el 30% de la sección es visible
+      { threshold: 0.3 } // 30% visible activa la animación
     );
 
     if (sectionRef.current) {
@@ -41,23 +46,29 @@ const BenefitsSection = () => {
       ref={sectionRef}
     >
       <div className="container">
-        <h2 className="text-center mb-5">{t('benefits.title')}</h2>
+        <h2 className="text-center mb-5">{title}</h2>
         <div className="row justify-content-center">
-          {benefits.map((benefit, index) => (
-            <div
-              className={`col-md-4 mb-4 text-center benefit-item ${
-                isVisible ? 'visible' : ''
-              }`}
-              key={index}
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              <div className="icon-container mx-auto">
-                <FontAwesomeIcon icon={icons[index]} size="3x" />
+          {Array.isArray(benefits) && benefits.length > 0 ? (
+            benefits.map((benefit, index) => (
+              <div
+                className={`col-md-4 mb-4 text-center benefit-item ${
+                  isVisible ? 'visible' : ''
+                }`}
+                key={index}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="icon-container mx-auto">
+                  <FontAwesomeIcon icon={icons[index]} size="3x" />
+                </div>
+                <h4 className="mt-3">{benefit.title}</h4>
+                <p>{benefit.description}</p>
               </div>
-              <h4 className="mt-3">{benefit.title}</h4>
-              <p>{benefit.description}</p>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="text-center">
+              {t('benefits.noItems', 'No benefits available.')}
+            </p>
+          )}
         </div>
       </div>
     </section>

@@ -24,7 +24,9 @@ const FeaturesSection = () => {
   const { t } = useTranslation();
   const featuresRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [features, setFeatures] = useState([]); // Estado local para almacenar las características
 
+  // Detectar visibilidad de la sección
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -37,27 +39,30 @@ const FeaturesSection = () => {
       }
     );
 
-    if (featuresRef.current) {
-      observer.observe(featuresRef.current);
-    }
+    if (featuresRef.current) observer.observe(featuresRef.current);
 
     return () => {
-      if (featuresRef.current) {
-        observer.unobserve(featuresRef.current);
-      }
+      if (featuresRef.current) observer.unobserve(featuresRef.current);
     };
   }, []);
 
-  const features = t('features.items', { returnObjects: true });
+  // Cargar características desde las traducciones
+  useEffect(() => {
+    const items = t('features.items', { returnObjects: true });
+    if (Array.isArray(items)) {
+      setFeatures(items);
+    } else {
+      console.error('Error: Features data is not an array.', items);
+    }
+  }, [t]);
 
   return (
-    <section
-      id="features"
-      className="features-section py-5"
-      ref={featuresRef}
-    >
+    <section id="features" className="features-section py-5" ref={featuresRef}>
       <div className="container">
+        {/* Título */}
         <h2 className="text-center mb-5">{t('features.title')}</h2>
+
+        {/* Lista de características */}
         <div className="row justify-content-center">
           {features.map((feature, index) => (
             <div
@@ -75,11 +80,12 @@ const FeaturesSection = () => {
             </div>
           ))}
         </div>
+
         {/* Botón Saber Más */}
         <div className="text-center mt-5">
           <button
             className="btn btn-primary"
-            onClick={() => alert(t('features.moreInfoAction'))}
+            onClick={() => window.location.href = '/details'}
           >
             {t('features.moreInfo')}
           </button>

@@ -1,0 +1,57 @@
+{
+    "en": {
+      "benefits": {
+        "title": "Benefits of Home Automation",
+        "items": [
+          {
+            "title": "Energy Efficiency",
+            "description": "Save energy with smart sensors and automated controls."
+          },
+          {
+            "title": "Convenience",
+            "description": "Automate daily tasks and control your property remotely."
+          }
+        ]
+      },
+      "security": {
+        "title": "Enhanced Security",
+        "description": "Monitor access with smart locks, cameras, and sensors."
+      },
+      "alexa": {
+        "title": "Alexa Integration",
+        "description": "Control devices with voice commands using Amazon Alexa."
+      },
+      "dashboards": {
+        "title": "Interactive Dashboards",
+        "description": "Monitor and control all devices from a centralized dashboard."
+      }
+    },
+    "es": {
+      "benefits": {
+        "title": "Beneficios de la Domótica",
+        "items": [
+          {
+            "title": "Eficiencia Energética",
+            "description": "Ahorra energía con sensores inteligentes y controles automatizados."
+          },
+          {
+            "title": "Comodidad",
+            "description": "Automatiza tareas diarias y controla tu propiedad de forma remota."
+          }
+        ]
+      },
+      "security": {
+        "title": "Seguridad Mejorada",
+        "description": "Monitorea accesos con cerraduras inteligentes, cámaras y sensores."
+      },
+      "alexa": {
+        "title": "Integración con Alexa",
+        "description": "Controla dispositivos con comandos de voz usando Amazon Alexa."
+      },
+      "dashboards": {
+        "title": "Paneles Interactivos",
+        "description": "Monitorea y controla todos los dispositivos desde un panel centralizado."
+      }
+    }
+  }
+  
