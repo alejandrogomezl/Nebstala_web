@@ -121,7 +121,32 @@ i18n
             ],
             button: "Learn More",
           },
-          domoticsPage: domotics.en,
+          domoticsPage: {
+            title: "Smart Home Automation",
+            description: "Discover how Nebstala's automation system can improve efficiency, security, and convenience.",
+            intro: {
+              title: "How Domotics Benefits Short-Term Rentals",
+              description: "Smart home automation systems enhance comfort, security, and energy efficiency, providing a modern and seamless experience for guests. From smart locks to automated climate control, domotics streamline property management and reduce operational costs.",
+              features: [
+                {
+                  title: "Automated Climate Control",
+                  description: "Keep guests comfortable while optimizing energy consumption with smart thermostats."
+                },
+                {
+                  title: "Keyless Access",
+                  description: "Simplify check-ins and enhance security with smart locks and remote access."
+                },
+                {
+                  title: "Energy Efficiency",
+                  description: "Lower energy costs with automated lighting, sensors, and climate control systems."
+                },
+                {
+                  title: "Remote Monitoring",
+                  description: "Control and monitor your property remotely for improved management and guest experience."
+                }
+              ]
+            }
+          },
         }
       },
       es: {
@@ -236,7 +261,32 @@ i18n
             ],
             button: "Saber Más",
           },
-          domoticsPage: domotics.es,
+          domoticsPage: {
+            title: "Automatización Domótica",
+            description: "Descubre cómo el sistema de automatización de Nebstala puede mejorar la eficiencia, seguridad y comodidad.",
+            intro: {
+              title: "Cómo Ayuda la Domótica en los Alojamientos Temporales",
+              description: "Los sistemas de automatización inteligente mejoran la comodidad, seguridad y eficiencia energética, proporcionando una experiencia moderna y fluida para los huéspedes. Desde cerraduras inteligentes hasta control climático automatizado, la domótica simplifica la gestión y reduce los costos operativos.",
+              features: [
+                {
+                  title: "Control Climático Automatizado",
+                  description: "Mantén a los huéspedes cómodos mientras optimizas el consumo energético con termostatos inteligentes."
+                },
+                {
+                  title: "Acceso Sin Llaves",
+                  description: "Simplifica los registros y mejora la seguridad con cerraduras inteligentes y acceso remoto."
+                },
+                {
+                  title: "Eficiencia Energética",
+                  description: "Reduce los costos energéticos con iluminación automatizada, sensores y sistemas de control climático."
+                },
+                {
+                  title: "Monitoreo Remoto",
+                  description: "Controla y monitorea tu propiedad de forma remota para mejorar la gestión y la experiencia del huésped."
+                }
+              ]
+            }
+          },
         }
       }
     },

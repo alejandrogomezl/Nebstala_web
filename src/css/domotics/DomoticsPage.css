@@ -1,0 +1,60 @@
+.domotics-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    min-height: 100vh;
+  }
+  
+  /* Sección */
+  .domotics-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Iconos */
+  .icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icon-container:hover {
+    background-color: #27ae60;
+    transform: scale(1.1);
+  }
+  
+  /* Animaciones */
+  .animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  .animate-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

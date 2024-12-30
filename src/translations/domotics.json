@@ -1,57 +1,50 @@
 {
-    "en": {
-      "benefits": {
-        "title": "Benefits of Home Automation",
-        "items": [
-          {
-            "title": "Energy Efficiency",
-            "description": "Save energy with smart sensors and automated controls."
-          },
-          {
-            "title": "Convenience",
-            "description": "Automate daily tasks and control your property remotely."
-          }
-        ]
-      },
-      "security": {
-        "title": "Enhanced Security",
-        "description": "Monitor access with smart locks, cameras, and sensors."
-      },
-      "alexa": {
-        "title": "Alexa Integration",
-        "description": "Control devices with voice commands using Amazon Alexa."
-      },
-      "dashboards": {
-        "title": "Interactive Dashboards",
-        "description": "Monitor and control all devices from a centralized dashboard."
-      }
-    },
-    "es": {
-      "benefits": {
-        "title": "Beneficios de la Domótica",
-        "items": [
-          {
-            "title": "Eficiencia Energética",
-            "description": "Ahorra energía con sensores inteligentes y controles automatizados."
-          },
-          {
-            "title": "Comodidad",
-            "description": "Automatiza tareas diarias y controla tu propiedad de forma remota."
-          }
-        ]
-      },
-      "security": {
-        "title": "Seguridad Mejorada",
-        "description": "Monitorea accesos con cerraduras inteligentes, cámaras y sensores."
-      },
-      "alexa": {
-        "title": "Integración con Alexa",
-        "description": "Controla dispositivos con comandos de voz usando Amazon Alexa."
-      },
-      "dashboards": {
-        "title": "Paneles Interactivos",
-        "description": "Monitorea y controla todos los dispositivos desde un panel centralizado."
-      }
+  "en": {
+    "intro": {
+      "title": "How Domotics Benefits Short-Term Rentals",
+      "description": "Smart home automation systems enhance comfort, security, and energy efficiency, providing a modern and seamless experience for guests. From smart locks to automated climate control, domotics streamline property management and reduce operational costs.",
+      "features": [
+        {
+          "title": "Automated Climate Control",
+          "description": "Keep guests comfortable while optimizing energy consumption with smart thermostats."
+        },
+        {
+          "title": "Keyless Access",
+          "description": "Simplify check-ins and enhance security with smart locks and remote access."
+        },
+        {
+          "title": "Energy Efficiency",
+          "description": "Lower energy costs with automated lighting, sensors, and climate control systems."
+        },
+        {
+          "title": "Remote Monitoring",
+          "description": "Control and monitor your property remotely for improved management and guest experience."
+        }
+      ]
+    }
+  },
+  "es": {
+    "intro": {
+      "title": "Cómo Ayuda la Domótica en los Alojamientos Temporales",
+      "description": "Los sistemas de automatización inteligente mejoran la comodidad, seguridad y eficiencia energética, proporcionando una experiencia moderna y fluida para los huéspedes. Desde cerraduras inteligentes hasta control climático automatizado, la domótica simplifica la gestión y reduce los costos operativos.",
+      "features": [
+        {
+          "title": "Control Climático Automatizado",
+          "description": "Mantén a los huéspedes cómodos mientras optimizas el consumo energético con termostatos inteligentes."
+        },
+        {
+          "title": "Acceso Sin Llaves",
+          "description": "Simplifica los registros y mejora la seguridad con cerraduras inteligentes y acceso remoto."
+        },
+        {
+          "title": "Eficiencia Energética",
+          "description": "Reduce los costos energéticos con iluminación automatizada, sensores y sistemas de control climático."
+        },
+        {
+          "title": "Monitoreo Remoto",
+          "description": "Controla y monitorea tu propiedad de forma remota para mejorar la gestión y la experiencia del huésped."
+        }
+      ]
     }
   }
-  
+}
