@@ -200,6 +200,24 @@ i18n
               }
             ]
           },
+          securitySystem: {
+            title: "Secure and Encrypted Smart Systems",
+            description: "Ensure maximum security with encrypted wireless connections and unique guest credentials. Monitor vacant properties for unexpected movements and receive real-time notifications for enhanced control.",
+            features: [
+              {
+                title: "Encrypted Connections",
+                description: "Protect data and communications with advanced encryption technologies for wireless devices."
+              },
+              {
+                title: "Motion Monitoring",
+                description: "Detect unexpected movements in vacant properties and receive immediate notifications."
+              },
+              {
+                title: "Unique Guest Credentials",
+                description: "Provide guests with secure, time-limited credentials to control devices and access their accommodations."
+              }
+            ]
+          },
         }
       },
       es: {
@@ -394,7 +412,25 @@ i18n
                 description: "Crea un entorno donde los huéspedes se sientan tan cómodos como en casa, o incluso mejor."
               }
             ]
-          },           
+          },
+          securitySystem: {
+            title: "Sistemas Inteligentes Seguros y Cifrados",
+            description: "Garantiza la máxima seguridad con conexiones inalámbricas cifradas y credenciales únicas para los huéspedes. Supervisa propiedades vacías en busca de movimientos inesperados y recibe notificaciones en tiempo real para un control mejorado.",
+            features: [
+              {
+                title: "Conexiones Cifradas",
+                description: "Protege los datos y las comunicaciones con tecnologías avanzadas de cifrado para dispositivos inalámbricos."
+              },
+              {
+                title: "Monitoreo de Movimientos",
+                description: "Detecta movimientos inesperados en propiedades vacías y recibe notificaciones inmediatas."
+              },
+              {
+                title: "Credenciales Únicas para Huéspedes",
+                description: "Proporciona a los huéspedes credenciales seguras y limitadas en el tiempo para controlar los dispositivos y acceder a sus alojamientos."
+              }
+            ]
+          },                     
         }
       }
     },
