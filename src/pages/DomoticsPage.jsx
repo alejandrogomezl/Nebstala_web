@@ -5,6 +5,7 @@ import ClimateControl from '../components/domotics/ClimateControl';
 import SmartLocks from '../components/domotics/SmartLocks';
 import UserExperience from '../components/domotics/UserExperience';
 import SecuritySystem from '../components/domotics/SecuritySystem';
+import SystemControl from '../components/domotics/SystemControl';
 
 import '../css/domotics/DomoticsPage.css';
 
@@ -17,6 +18,7 @@ const DomoticsPage = () => {
       <SmartLocks />
       <UserExperience />
       <SecuritySystem />
+      <SystemControl />
     </div>
   );
 };

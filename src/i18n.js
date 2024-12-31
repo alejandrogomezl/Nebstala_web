@@ -218,6 +218,28 @@ i18n
               }
             ]
           },
+          systemControl: {
+            title: "Complete Control of Smart Automation",
+            description: "Manage your property with ease using our web or mobile app for full administrative control. Guests can control devices during their stay, use voice assistants, and access smart dashboards for a seamless experience.",
+            features: [
+              {
+                title: "Web and App Control",
+                description: "Administrators can monitor and manage all devices remotely from a dedicated app or web portal."
+              },
+              {
+                title: "Guest Device Control",
+                description: "Guests can control devices like lights, climate, and locks from any device during their stay."
+              },
+              {
+                title: "Voice Assistants",
+                description: "Integrate with voice assistants for hands-free control and enhanced convenience."
+              },
+              {
+                title: "Smart Dashboards",
+                description: "Monitor and manage device performance in real-time using interactive dashboards."
+              }
+            ]
+          },
         }
       },
       es: {
@@ -430,7 +452,29 @@ i18n
                 description: "Proporciona a los huéspedes credenciales seguras y limitadas en el tiempo para controlar los dispositivos y acceder a sus alojamientos."
               }
             ]
-          },                     
+          },
+          systemControl: {
+            title: "Control Total del Sistema Domótico",
+            description: "Gestiona tu propiedad de manera eficiente con nuestra aplicación web o móvil para un control administrativo completo. Los huéspedes pueden controlar los dispositivos durante su estancia, utilizar asistentes de voz y acceder a dashboards inteligentes para disfrutar de una experiencia sin complicaciones.",
+            features: [
+              {
+                title: "Control desde Web y App",
+                description: "Los administradores pueden monitorear y gestionar todos los dispositivos de forma remota a través de una aplicación dedicada o un portal web."
+              },
+              {
+                title: "Control para Huéspedes",
+                description: "Los huéspedes pueden controlar dispositivos como luces, climatización y cerraduras desde cualquier dispositivo durante su estancia."
+              },
+              {
+                title: "Asistentes de Voz",
+                description: "Integra asistentes de voz para un control manos libres y una experiencia más conveniente."
+              },
+              {
+                title: "Dashboards Inteligentes",
+                description: "Monitorea y gestiona el rendimiento de los dispositivos en tiempo real mediante dashboards interactivos."
+              }
+            ]
+          },
         }
       }
     },
