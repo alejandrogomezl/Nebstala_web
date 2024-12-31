@@ -15,7 +15,7 @@
   }
   
   /* Características */
-  .feature-item {
+  .feature-itemdom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
   
-  .feature-item.visible {
+  .feature-itemdom.visible {
     opacity: 1;
     transform: translateY(0);
   }

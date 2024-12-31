@@ -50,7 +50,7 @@ const SystemControl = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`col-lg-6 d-flex align-items-center justify-content-center mb-4 feature-item ${
+              className={`col-lg-6 d-flex align-items-center justify-content-center mb-4 feature-itemdom ${
                 isVisible ? 'visible' : ''
               }`}
               style={{ animationDelay: `${index * 0.2}s` }}

@@ -26,7 +26,7 @@ const FeaturesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation();
 
-  // Datos de traducción
+  // Obtener los datos de traducción
   const featuresData = t('features', { returnObjects: true }) || {};
   const title = featuresData.title || '';
   const features = featuresData.items || []; // Garantiza que sea un array
@@ -39,7 +39,7 @@ const FeaturesSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 } // 30% visible activa la animación
     );
 
     if (sectionRef.current) {
@@ -56,21 +56,18 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="features-section py-5" ref={sectionRef}>
       <div className="container">
-        {/* Título */}
         <h2 className="text-center mb-5">{title}</h2>
-
-        {/* Características en 2 columnas x 3 filas */}
         <div className="row justify-content-center">
           {Array.isArray(features) && features.length > 0 ? (
             features.map((feature, index) => (
               <div
-                className={`col-md-6 mb-4 text-center feature-item ${
+                className={`col-md-4 mb-4 text-center feature-item ${
                   isVisible ? 'visible' : ''
                 }`}
                 key={index}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="icon-container mx-auto mb-3">
+                <div className="icon-container mx-auto">
                   <FontAwesomeIcon icon={icons[index]} size="3x" />
                 </div>
                 <h4 className="mt-3">{feature.title}</h4>
