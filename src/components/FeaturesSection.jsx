@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
+// Íconos para cada característica
 const icons = [
   faLightbulb,
   faCalendarAlt,
@@ -21,12 +22,16 @@ const icons = [
 ];
 
 const FeaturesSection = () => {
-  const { t } = useTranslation();
-  const featuresRef = useRef(null);
+  const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [features, setFeatures] = useState([]); // Estado local para almacenar las características
+  const { t } = useTranslation();
 
-  // Detectar visibilidad de la sección
+  // Datos de traducción
+  const featuresData = t('features', { returnObjects: true }) || {};
+  const title = featuresData.title || '';
+  const features = featuresData.items || []; // Garantiza que sea un array
+
+  // Animación al hacer scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -34,61 +39,49 @@ const FeaturesSection = () => {
           setIsVisible(true);
         }
       },
-      {
-        threshold: 0.2, // Activa la animación cuando el 20% del elemento es visible
-      }
+      { threshold: 0.3 }
     );
 
-    if (featuresRef.current) observer.observe(featuresRef.current);
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
 
     return () => {
-      if (featuresRef.current) observer.unobserve(featuresRef.current);
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
     };
   }, []);
 
-  // Cargar características desde las traducciones
-  useEffect(() => {
-    const items = t('features.items', { returnObjects: true });
-    if (Array.isArray(items)) {
-      setFeatures(items);
-    } else {
-      console.error('Error: Features data is not an array.', items);
-    }
-  }, [t]);
-
   return (
-    <section id="features" className="features-section py-5" ref={featuresRef}>
+    <section id="features" className="features-section py-5" ref={sectionRef}>
       <div className="container">
         {/* Título */}
-        <h2 className="text-center mb-5">{t('features.title')}</h2>
+        <h2 className="text-center mb-5">{title}</h2>
 
-        {/* Lista de características */}
+        {/* Características en 2 columnas x 3 filas */}
         <div className="row justify-content-center">
-          {features.map((feature, index) => (
-            <div
-              className={`col-md-4 mb-4 feature-item text-center ${
-                isVisible ? 'visible' : ''
-              }`}
-              key={index}
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              <div className="icon-container mx-auto">
-                <FontAwesomeIcon icon={icons[index]} size="3x" />
+          {Array.isArray(features) && features.length > 0 ? (
+            features.map((feature, index) => (
+              <div
+                className={`col-md-6 mb-4 text-center feature-item ${
+                  isVisible ? 'visible' : ''
+                }`}
+                key={index}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="icon-container mx-auto mb-3">
+                  <FontAwesomeIcon icon={icons[index]} size="3x" />
+                </div>
+                <h4 className="mt-3">{feature.title}</h4>
+                <p>{feature.description}</p>
               </div>
-              <h4 className="mt-3">{feature.title}</h4>
-              <p>{feature.description}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Botón Saber Más */}
-        <div className="text-center mt-5">
-          <button
-            className="btn btn-primary"
-            onClick={() => window.location.href = '/details'}
-          >
-            {t('features.moreInfo')}
-          </button>
+            ))
+          ) : (
+            <p className="text-center">
+              {t('features.noItems', 'No features available.')}
+            </p>
+          )}
         </div>
       </div>
     </section>
