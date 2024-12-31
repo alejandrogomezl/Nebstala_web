@@ -182,6 +182,24 @@ i18n
               }
             ]
           },
+          userExperience: {
+            title: "Enhancing Guest Experience with Smart Automation",
+            description: "Transform your guests' experience by leveraging smart sensors for automatic lighting and climate control. Allow users to prepare their accommodations before arrival, ensuring maximum comfort and convenience.",
+            features: [
+              {
+                title: "Automatic Lighting Control",
+                description: "Presence sensors turn lights on and off automatically, providing convenience and energy savings."
+              },
+              {
+                title: "Pre-Arrival Climate Settings",
+                description: "Enable guests to activate air conditioning or heating minutes before arrival for optimal comfort."
+              },
+              {
+                title: "Feel at Home",
+                description: "Create an environment where guests feel as comfortable as, or even better than, at home."
+              }
+            ]
+          },
         }
       },
       es: {
@@ -358,7 +376,25 @@ i18n
                 description: "Monitorea y gestiona registros de acceso de forma remota, garantizando mayor seguridad y control sobre su propiedad."
               }
             ]
-          },          
+          },
+          userExperience: {
+            title: "Mejora de la Experiencia del Huésped con Automatización Inteligente",
+            description: "Transforma la experiencia de tus huéspedes utilizando sensores inteligentes para el control automático de iluminación y climatización. Permite que los usuarios preparen su alojamiento antes de llegar, asegurando el máximo confort y comodidad.",
+            features: [
+              {
+                title: "Control Automático de Iluminación",
+                description: "Los sensores de presencia encienden y apagan las luces automáticamente, proporcionando comodidad y ahorro energético."
+              },
+              {
+                title: "Configuración Climática Antes de Llegar",
+                description: "Permite a los huéspedes activar el aire acondicionado o la calefacción minutos antes de su llegada para garantizar el confort óptimo."
+              },
+              {
+                title: "Como en Casa",
+                description: "Crea un entorno donde los huéspedes se sientan tan cómodos como en casa, o incluso mejor."
+              }
+            ]
+          },           
         }
       }
     },
