@@ -1,6 +1,6 @@
 .hero-section {
     height: 100vh; /* Ocupa toda la altura de la ventana */
-    background: url('../../assets/domoticsHeader.jpg') no-repeat center center/cover;
+    background: url('../../assets/Alexa.jpg') no-repeat center center/cover;
     position: relative;
     animation: fadeInBackground 2s ease-in-out; /* Animación inicial */
     overflow: hidden;

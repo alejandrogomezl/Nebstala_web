@@ -6,7 +6,19 @@ const SystemControl = () => {
   const { t } = useTranslation();
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [imagesLoaded, setImagesLoaded] = useState([true, true, true]); // Estado para verificar imágenes
+
+  // Definir rutas de imágenes al principio
+  const images = [
+    '',
+    '',
+    '/images/Alexa.jpg',
+    '/images/Dashboard.jpg',
+  ];
+
+  // Estado para verificar si la imagen se ha cargado correctamente
+  const [imagesLoaded, setImagesLoaded] = useState(
+    Array(images.length).fill(true)
+  );
 
   // Obtener datos de traducción
   const controlData = t('systemControl', { returnObjects: true }) || {};
@@ -39,7 +51,7 @@ const SystemControl = () => {
   return (
     <section id="system-control" className="system-control-section py-5" ref={sectionRef}>
       <div className="container">
-        {/* Título y Texto Largo - Ancho Completo */}
+        {/* Título y descripción - Ancho completo */}
         <div className="text-center mb-5">
           <h2 className="mb-4">{title}</h2>
           <p className="description-text">{description}</p>
@@ -59,7 +71,7 @@ const SystemControl = () => {
               <div className="col-md-6 text-center me-4">
                 {imagesLoaded[index] ? (
                   <img
-                    src={`/images/system-control-${index + 1}.jpg`}
+                    src={images[index]} // Usar la imagen predefinida
                     alt={feature.title}
                     className="img-fluid control-image"
                     onError={() => {
