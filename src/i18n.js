@@ -240,6 +240,16 @@ i18n
               }
             ]
           },
+          contact: {
+            title: "Contact Us",
+            description: "Fill out the form to get in touch with us.",
+            name: "Name",
+            email: "Email Address",
+            message: "Message",
+            button: "Send",
+            success: "Message sent successfully!",
+            error: "There was an error sending the form. Please try again."
+          },
         }
       },
       es: {
@@ -474,6 +484,16 @@ i18n
                 description: "Monitorea y gestiona el rendimiento de los dispositivos en tiempo real mediante dashboards interactivos."
               }
             ]
+          },
+          contact: {
+            title: "Contáctanos",
+            description: "Completa el formulario para ponerte en contacto con nosotros.",
+            name: "Nombre",
+            email: "Correo Electrónico",
+            message: "Mensaje",
+            button: "Enviar",
+            success: "¡Mensaje enviado con éxito!",
+            error: "Hubo un error al enviar el formulario. Inténtalo de nuevo."
           },
         }
       }
