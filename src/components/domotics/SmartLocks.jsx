@@ -56,7 +56,7 @@ const SmartLocks = () => {
           <div className="col-lg-6 text-center">
             {imageLoaded ? (
               <img
-                src="/images/SmartLock.png"
+                src="/images/SmartLock.webp"
                 alt="Smart Locks"
                 className="img-fluid locks-image"
                 onError={() => setImageLoaded(false)} // Si hay un error, desactiva la imagen

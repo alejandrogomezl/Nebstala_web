@@ -56,7 +56,7 @@ const UserExperience = () => {
           <div className="col-lg-6 text-center">
             {imageLoaded ? (
               <img
-                src="/images/Experience.jpg"
+                src="/images/Experience.webp"
                 alt="User Experience"
                 className="img-fluid experience-image"
                 onError={() => setImageLoaded(false)} // Si hay un error, desactiva la imagen
