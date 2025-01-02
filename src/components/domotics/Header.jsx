@@ -14,7 +14,7 @@ const Header = () => {
         </h1>
 
         {/* Descripción */}
-        <p className="lead mt-3" style={{ fontFamily: 'Roboto, sans-serif', color: '#FFFFFF' }}>
+        <p className="lead mt-33 " style={{ fontFamily: 'Roboto, sans-serif'}}>
           {t('domotics.description')}
         </p>
       </div>
