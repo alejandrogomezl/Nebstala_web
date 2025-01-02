@@ -9,8 +9,9 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const scrolled = useScroll();
   const navigate = useNavigate();
-  const location = useLocation(); // Detectar la página actual
+  const location = useLocation();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // Estado para menú móvil
 
   // Cambiar idioma
   const changeLanguage = (lang) => {
@@ -20,32 +21,30 @@ const Navbar = () => {
 
   // Navegar entre páginas y hacer scroll
   const handleNavigation = (page, section) => {
+    setMenuOpen(false); // Cerrar menú al navegar
     if (page === 'details') {
-      // Si el botón es Domotics, redirige a /details y desplaza al inicio
       navigate('/details');
       setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll al inicio
-      }, 100); // Espera para asegurar la carga del DOM
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
     } else {
       if (location.pathname !== `/${page}`) {
-        // Redirige primero si no estás en la página deseada
         navigate(`/${page}`);
         setTimeout(() => {
           scrollToSection(section);
         }, 500);
       } else {
-        // Si ya estás en la página, solo hace scroll
         scrollToSection(section);
       }
     }
   };
 
-  // Función para desplazarse suavemente a una sección
+  // Función para desplazarse suavemente
   const scrollToSection = (section) => {
     scroller.scrollTo(section, {
       duration: 500,
       smooth: true,
-      offset: -70 // Ajuste para el tamaño del navbar fijo
+      offset: -70,
     });
   };
 
@@ -58,31 +57,24 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <a className="navbar-brand logo" href="/">
-          <img 
-            src="/logo512.png" 
-            alt="Logo" 
-            className="navbar-logo"
-          />
+          <img src="/logo512.png" alt="Logo" className="navbar-logo" />
         </a>
 
-
-        {/* Botón de colapso para móviles */}
+        {/* Botón para menú móvil */}
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={() => setMenuOpen(!menuOpen)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Enlaces */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav ms-auto">
-            {/* Features */}
             <li className="nav-item">
               <button
                 className="nav-link btn"
@@ -92,7 +84,6 @@ const Navbar = () => {
               </button>
             </li>
 
-            {/* Domotics (Redirige a /details y desplaza al inicio) */}
             <li className="nav-item">
               <button
                 className="nav-link btn"
@@ -102,7 +93,6 @@ const Navbar = () => {
               </button>
             </li>
 
-            {/* Contact */}
             <li className="nav-item">
               <button
                 className="nav-link btn"
