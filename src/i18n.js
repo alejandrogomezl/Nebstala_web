@@ -81,19 +81,29 @@ i18n
             title: "Frequently Asked Questions",
             items: [
               {
-                question: "What devices are compatible?",
+                question: "Is Nebstala compatible with other property management systems (PMS)?",
                 answer:
-                  "Nebstala is compatible with smart lights, thermostats, locks, and other IoT devices using Zigbee or Tuya standards.",
+                  "Yes, we are working to add compatibility with some of the most popular property management systems, enabling seamless integration and data synchronization.",
               },
               {
-                question: "How secure is the automation system?",
+                question: "What smart home devices are compatible with Nebstala?",
                 answer:
-                  "We use encrypted communications and advanced protocols to ensure the security of your data and devices.",
+                  "Nebstala is compatible with smart lights, thermostats, motion sensors, smart locks, and other IoT devices that use Zigbee or Tuya. We are continuously expanding compatibility with more devices and popular brands.",
               },
               {
-                question: "Can I customize Nebstala for my business?",
+                question: "Can Nebstala be used with smart locks from other manufacturers?",
                 answer:
-                  "Yes, Nebstala is modular and can be adapted to your specific needs as your business grows.",
+                  "Yes, Nebstala is currently compatible with smart locks from well-known brands. We are also working to add support for more models in the future.",
+              },
+              {
+                question: "How does Nebstala improve energy efficiency in properties?",
+                answer:
+                  "Nebstala uses motion and temperature sensors to optimize the use of heating, cooling, and lighting systems by turning them off when no presence is detected and automatically setting ideal conditions for each stay.",
+              },
+              {
+                question: "Does the system require an internet connection to work?",
+                answer:
+                  "The basic version of Nebstala requires a stable internet connection for advanced features like automation and sensor usage. However, we also offer a premium plan that includes a dedicated controller (powered by Home Assistant) to manage these actions locally. This enhances fault tolerance and privacy by processing data locally. Additionally, the premium plan supports advanced features such as image processing and AI-driven automation.",
               },
             ],
           },
@@ -326,19 +336,29 @@ i18n
             title: "Preguntas Frecuentes",
             items: [
               {
-                question: "¿Qué dispositivos son compatibles?",
+                question: "¿Nebstala es compatible con otros sistemas de gestión de propiedades (PMS)?",
                 answer:
-                  "Nebstala es compatible con luces inteligentes, termostatos, cerraduras y otros dispositivos IoT que utilicen Zigbee o Tuya.",
+                  "Sí, estamos trabajando para añadir compatibilidad con otros de los sistemas de gestión de propiedades más populares del mercado, facilitando la integración y sincronización de datos.",
               },
               {
-                question: "¿Qué tan seguro es el sistema de automatización?",
+                question: "¿Qué dispositivos domóticos son compatibles con Nebstala?",
                 answer:
-                  "Utilizamos comunicaciones cifradas y protocolos avanzados para garantizar la seguridad de tus datos y dispositivos.",
+                  "Nebstala es compatible con luces inteligentes, termostatos, sensores de presencia, cerraduras inteligentes y otros dispositivos IoT que utilicen Zigbee o Tuya. Seguimos ampliando compatibilidad con más dispositivos y marcas populares.",
               },
               {
-                question: "¿Puedo personalizar Nebstala para mi negocio?",
+                question: "¿Se pueden utilizar cerraduras inteligentes de otros fabricantes con Nebstala?",
                 answer:
-                  "Sí, Nebstala es modular y se puede adaptar a tus necesidades específicas a medida que tu negocio crece.",
+                  "Sí, actualmente Nebstala es compatible con cerraduras inteligentes de marcas reconocidas. Además, seguimos trabajando para añadir soporte a más modelos en el futuro.",
+              },
+              {
+                question: "¿Cómo mejora Nebstala la eficiencia energética en los alojamientos?",
+                answer:
+                  "Nebstala utiliza sensores de presencia y temperatura para optimizar el uso de climatización e iluminación, apagando los dispositivos cuando no se detecta presencia y configurando automáticamente las condiciones ideales para cada estancia.",
+              },
+              {
+                question: "¿Se necesita conexión a internet para que el sistema funcione?",
+                answer:
+                  "La versión básica de Nebstala requiere una conexión a internet estable para funciones avanzadas como automatizaciones o el uso de sensores. Sin embargo, también ofrecemos un plan superior que incluye un controlador dedicado (basado en Home Assistant) capaz de gestionar estas acciones de manera local. Esto mejora la tolerancia a fallos y la privacidad al procesar los datos en local. Además, el plan premium añade funcionalidades avanzadas como el procesamiento de imágenes y automatizaciones impulsadas por inteligencia artificial.",
               },
             ],
           },
