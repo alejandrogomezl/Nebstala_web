@@ -15,7 +15,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Descripción */}
-        <p className="lead mt-3" style={{ fontFamily: 'Roboto, sans-serif' }}>
+        <p className="lead mt-33" style={{ fontFamily: 'Roboto, sans-serif' }}>
           {t('hero.description')}
         </p>
 
