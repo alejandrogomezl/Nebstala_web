@@ -4,7 +4,7 @@ import FeaturesSection from '../components/FeaturesSection';
 import BenefitsSection from '../components/BenefitsSection';
 import FaqSection from '../components/FaqSection';
 import DomoticsBenefits from '../components/DomoticsBenefits';
-import ContactSection from '../components/ContactSection';
+import ContactForm from '../components/ContactForm';
 
 
 const Home = () => (
@@ -14,7 +14,7 @@ const Home = () => (
     <BenefitsSection />
     <DomoticsBenefits />
     <FaqSection />
-    <ContactSection />
+    <ContactForm />
   </div>
 );
 

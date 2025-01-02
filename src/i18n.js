@@ -81,19 +81,29 @@ i18n
             title: "Frequently Asked Questions",
             items: [
               {
-                question: "What devices are compatible?",
+                question: "Is Nebstala compatible with other property management systems (PMS)?",
                 answer:
-                  "Nebstala is compatible with smart lights, thermostats, locks, and other IoT devices using Zigbee or Tuya standards.",
+                  "Yes, we are working to add compatibility with some of the most popular property management systems, enabling seamless integration and data synchronization.",
               },
               {
-                question: "How secure is the automation system?",
+                question: "What smart home devices are compatible with Nebstala?",
                 answer:
-                  "We use encrypted communications and advanced protocols to ensure the security of your data and devices.",
+                  "Nebstala is compatible with smart lights, thermostats, motion sensors, smart locks, and other IoT devices that use Zigbee or Tuya. We are continuously expanding compatibility with more devices and popular brands.",
               },
               {
-                question: "Can I customize Nebstala for my business?",
+                question: "Can Nebstala be used with smart locks from other manufacturers?",
                 answer:
-                  "Yes, Nebstala is modular and can be adapted to your specific needs as your business grows.",
+                  "Yes, Nebstala is currently compatible with smart locks from well-known brands. We are also working to add support for more models in the future.",
+              },
+              {
+                question: "How does Nebstala improve energy efficiency in properties?",
+                answer:
+                  "Nebstala uses motion and temperature sensors to optimize the use of heating, cooling, and lighting systems by turning them off when no presence is detected and automatically setting ideal conditions for each stay.",
+              },
+              {
+                question: "Does the system require an internet connection to work?",
+                answer:
+                  "The basic version of Nebstala requires a stable internet connection for advanced features like automation and sensor usage. However, we also offer a premium plan that includes a dedicated controller (powered by Home Assistant) to manage these actions locally. This enhances fault tolerance and privacy by processing data locally. Additionally, the premium plan supports advanced features such as image processing and AI-driven automation.",
               },
             ],
           },
@@ -148,7 +158,7 @@ i18n
           },
           climateControl: {
             title: "Smart Climate Control for Energy Efficiency",
-            description: "Smart climate control systems provide a revolutionary way to manage air conditioning and heating in modern properties. By integrating intelligent thermostats and sensors for temperature and presence detection, property owners can significantly reduce energy consumption and enhance guest comfort. These systems automatically adjust the temperature based on occupancy, preventing energy waste caused by running air conditioners or heaters when rooms are unoccupied. The use of smart thermostats not only improves energy efficiency but also extends the lifespan of HVAC (Heating, Ventilation, and Air Conditioning) systems. By maintaining optimal settings, these devices reduce wear and tear, minimizing maintenance costs and the need for premature replacements. Additionally, presence sensors detect movements and adjust climate settings in real-time, ensuring rooms are only cooled or heated when needed. This proactive approach not only lowers operational costs but also contributes to a more sustainable and eco-friendly property management solution. Investing in smart climate control technologies is essential for short-term rental properties and hotels looking to modernize their operations. Guests benefit from increased comfort, while property managers enjoy reduced utility bills and simplified climate management.",
+            description: "Smart climate control systems optimize energy consumption and enhance guest comfort through intelligent thermostats and temperature and presence sensors. These devices automatically adjust temperature based on occupancy, preventing energy waste and extending HVAC system lifespan. Additionally, they enable real-time climate management, reducing operating costs and promoting more sustainable and eco-friendly property management.",
             features: [
               {
                 title: "Intelligent Temperature Control",
@@ -181,6 +191,74 @@ i18n
                 description: "Monitor and manage access logs remotely, ensuring greater security and control over your property."
               }
             ]
+          },
+          userExperience: {
+            title: "Enhancing Guest Experience with Smart Automation",
+            description: "Transform your guests' experience by leveraging smart sensors for automatic lighting and climate control. Allow users to prepare their accommodations before arrival, ensuring maximum comfort and convenience.",
+            features: [
+              {
+                title: "Automatic Lighting Control",
+                description: "Presence sensors turn lights on and off automatically, providing convenience and energy savings."
+              },
+              {
+                title: "Pre-Arrival Climate Settings",
+                description: "Enable guests to activate air conditioning or heating minutes before arrival for optimal comfort."
+              },
+              {
+                title: "Feel at Home",
+                description: "Create an environment where guests feel as comfortable as, or even better than, at home."
+              }
+            ]
+          },
+          securitySystem: {
+            title: "Secure and Encrypted Smart Systems",
+            description: "Ensure maximum security with encrypted wireless connections and unique guest credentials. Monitor vacant properties for unexpected movements and receive real-time notifications for enhanced control.",
+            features: [
+              {
+                title: "Encrypted Connections",
+                description: "Protect data and communications with advanced encryption technologies for wireless devices."
+              },
+              {
+                title: "Motion Monitoring",
+                description: "Detect unexpected movements in vacant properties and receive immediate notifications."
+              },
+              {
+                title: "Unique Guest Credentials",
+                description: "Provide guests with secure, time-limited credentials to control devices and access their accommodations."
+              }
+            ]
+          },
+          systemControl: {
+            title: "Complete Control of Smart Automation",
+            description: "Manage your property with ease using our web or mobile app for full administrative control. Guests can control devices during their stay, use voice assistants, and access smart dashboards for a seamless experience.",
+            features: [
+              {
+                title: "Web and App Control",
+                description: "Administrators can monitor and manage all devices remotely from a dedicated app or web portal."
+              },
+              {
+                title: "Guest Device Control",
+                description: "Guests can control devices like lights, climate, and locks from any device during their stay."
+              },
+              {
+                title: "Voice Assistants",
+                description: "Integrate with voice assistants for hands-free control and enhanced convenience."
+              },
+              {
+                title: "Smart Dashboards",
+                description: "Monitor and manage device performance in real-time using interactive dashboards."
+              }
+            ]
+          },
+          contact: {
+            title: "Contact Us",
+            description: "Fill out the form to get in touch with us.",
+            name: "Name",
+            email: "Email Address",
+            message: "Message",
+            button: "Send",
+            success: "Message sent successfully!",
+            error: "There was an error sending the form. Please try again."
           },
         }
       },
@@ -258,19 +336,29 @@ i18n
             title: "Preguntas Frecuentes",
             items: [
               {
-                question: "¿Qué dispositivos son compatibles?",
+                question: "¿Nebstala es compatible con otros sistemas de gestión de propiedades (PMS)?",
                 answer:
-                  "Nebstala es compatible con luces inteligentes, termostatos, cerraduras y otros dispositivos IoT que utilicen Zigbee o Tuya.",
+                  "Sí, estamos trabajando para añadir compatibilidad con otros de los sistemas de gestión de propiedades más populares del mercado, facilitando la integración y sincronización de datos.",
               },
               {
-                question: "¿Qué tan seguro es el sistema de automatización?",
+                question: "¿Qué dispositivos domóticos son compatibles con Nebstala?",
                 answer:
-                  "Utilizamos comunicaciones cifradas y protocolos avanzados para garantizar la seguridad de tus datos y dispositivos.",
+                  "Nebstala es compatible con luces inteligentes, termostatos, sensores de presencia, cerraduras inteligentes y otros dispositivos IoT que utilicen Zigbee o Tuya. Seguimos ampliando compatibilidad con más dispositivos y marcas populares.",
               },
               {
-                question: "¿Puedo personalizar Nebstala para mi negocio?",
+                question: "¿Se pueden utilizar cerraduras inteligentes de otros fabricantes con Nebstala?",
                 answer:
-                  "Sí, Nebstala es modular y se puede adaptar a tus necesidades específicas a medida que tu negocio crece.",
+                  "Sí, actualmente Nebstala es compatible con cerraduras inteligentes de marcas reconocidas. Además, seguimos trabajando para añadir soporte a más modelos en el futuro.",
+              },
+              {
+                question: "¿Cómo mejora Nebstala la eficiencia energética en los alojamientos?",
+                answer:
+                  "Nebstala utiliza sensores de presencia y temperatura para optimizar el uso de climatización e iluminación, apagando los dispositivos cuando no se detecta presencia y configurando automáticamente las condiciones ideales para cada estancia.",
+              },
+              {
+                question: "¿Se necesita conexión a internet para que el sistema funcione?",
+                answer:
+                  "La versión básica de Nebstala requiere una conexión a internet estable para funciones avanzadas como automatizaciones o el uso de sensores. Sin embargo, también ofrecemos un plan superior que incluye un controlador dedicado (basado en Home Assistant) capaz de gestionar estas acciones de manera local. Esto mejora la tolerancia a fallos y la privacidad al procesar los datos en local. Además, el plan premium añade funcionalidades avanzadas como el procesamiento de imágenes y automatizaciones impulsadas por inteligencia artificial.",
               },
             ],
           },
@@ -325,7 +413,7 @@ i18n
           },
           climateControl: {
             title: "Control Climático Inteligente para Eficiencia Energética",
-            description: "Los sistemas de control climático inteligente ofrecen una solución revolucionaria para gestionar el aire acondicionado y la calefacción en propiedades modernas. Al integrar termostatos inteligentes y sensores para detectar temperatura y presencia, los propietarios pueden reducir significativamente el consumo energético y mejorar el confort de los huéspedes. Estos sistemas ajustan automáticamente la temperatura en función de la ocupación, evitando el desperdicio de energía causado por mantener encendidos los aires acondicionados o calefactores cuando las habitaciones están vacías. El uso de termostatos inteligentes no solo mejora la eficiencia energética, sino que también prolonga la vida útil de los sistemas HVAC. Al mantener configuraciones óptimas, estos dispositivos reducen el desgaste, minimizando los costos de mantenimiento y la necesidad de reemplazos prematuros. Además, los sensores de presencia detectan movimientos y ajustan el clima en tiempo real, asegurando que las habitaciones solo se enfríen o calienten cuando sea necesario. Este enfoque proactivo no solo reduce los costos operativos, sino que también contribuye a una gestión de propiedades más sostenible y ecológica.",
+            description: "Los sistemas de control climático inteligente optimizan el consumo energético y mejoran el confort de los huéspedes mediante termostatos inteligentes y sensores de temperatura y presencia. Estos dispositivos ajustan automáticamente la temperatura según la ocupación, evitando el desperdicio de energía y prolongando la vida útil de los sistemas HVAC. Además, permiten gestionar el clima en tiempo real, reduciendo costos operativos y promoviendo una gestión más sostenible y ecológica.",
             features: [
               {
                 title: "Control Inteligente de Temperatura",
@@ -358,7 +446,75 @@ i18n
                 description: "Monitorea y gestiona registros de acceso de forma remota, garantizando mayor seguridad y control sobre su propiedad."
               }
             ]
-          },          
+          },
+          userExperience: {
+            title: "Mejora de la Experiencia del Huésped con Automatización Inteligente",
+            description: "Transforma la experiencia de tus huéspedes utilizando sensores inteligentes para el control automático de iluminación y climatización. Permite que los usuarios preparen su alojamiento antes de llegar, asegurando el máximo confort y comodidad.",
+            features: [
+              {
+                title: "Control Automático de Iluminación",
+                description: "Los sensores de presencia encienden y apagan las luces automáticamente, proporcionando comodidad y ahorro energético."
+              },
+              {
+                title: "Configuración Climática Antes de Llegar",
+                description: "Permite a los huéspedes activar el aire acondicionado o la calefacción minutos antes de su llegada para garantizar el confort óptimo."
+              },
+              {
+                title: "Como en Casa",
+                description: "Crea un entorno donde los huéspedes se sientan tan cómodos como en casa, o incluso mejor."
+              }
+            ]
+          },
+          securitySystem: {
+            title: "Sistemas Inteligentes Seguros y Cifrados",
+            description: "Garantiza la máxima seguridad con conexiones inalámbricas cifradas y credenciales únicas para los huéspedes. Supervisa propiedades vacías en busca de movimientos inesperados y recibe notificaciones en tiempo real para un control mejorado.",
+            features: [
+              {
+                title: "Conexiones Cifradas",
+                description: "Protege los datos y las comunicaciones con tecnologías avanzadas de cifrado para dispositivos inalámbricos."
+              },
+              {
+                title: "Monitoreo de Movimientos",
+                description: "Detecta movimientos inesperados en propiedades vacías y recibe notificaciones inmediatas."
+              },
+              {
+                title: "Credenciales Únicas para Huéspedes",
+                description: "Proporciona a los huéspedes credenciales seguras y limitadas en el tiempo para controlar los dispositivos y acceder a sus alojamientos."
+              }
+            ]
+          },
+          systemControl: {
+            title: "Control Total del Sistema Domótico",
+            description: "Gestiona tu propiedad de manera eficiente con nuestra aplicación web o móvil para un control administrativo completo. Los huéspedes pueden controlar los dispositivos durante su estancia, utilizar asistentes de voz y acceder a dashboards inteligentes para disfrutar de una experiencia sin complicaciones.",
+            features: [
+              {
+                title: "Control desde Web y App",
+                description: "Los administradores pueden monitorear y gestionar todos los dispositivos de forma remota a través de una aplicación dedicada o un portal web."
+              },
+              {
+                title: "Control para Huéspedes",
+                description: "Los huéspedes pueden controlar dispositivos como luces, climatización y cerraduras desde cualquier dispositivo durante su estancia."
+              },
+              {
+                title: "Asistentes de Voz",
+                description: "Integra asistentes de voz para un control manos libres y una experiencia más conveniente."
+              },
+              {
+                title: "Dashboards Inteligentes",
+                description: "Monitorea y gestiona el rendimiento de los dispositivos en tiempo real mediante dashboards interactivos."
+              }
+            ]
+          },
+          contact: {
+            title: "Contáctanos",
+            description: "Completa el formulario para ponerte en contacto con nosotros.",
+            name: "Nombre",
+            email: "Correo Electrónico",
+            message: "Mensaje",
+            button: "Enviar",
+            success: "¡Mensaje enviado con éxito!",
+            error: "Hubo un error al enviar el formulario. Inténtalo de nuevo."
+          },
         }
       }
     },

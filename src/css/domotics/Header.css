@@ -1,6 +1,6 @@
-.hero-section {
+.header {
     height: 100vh; /* Ocupa toda la altura de la ventana */
-    background: url('../../assets/domoticsHeader.jpg') no-repeat center center/cover;
+    background: url('../../assets/Alexa.jpg') no-repeat center center/cover;
     position: relative;
     animation: fadeInBackground 2s ease-in-out; /* Animación inicial */
     overflow: hidden;
@@ -19,7 +19,7 @@
   }
   
   /* Efecto Parallax */
-  .hero-section::after {
+  .header::after {
     content: '';
     position: absolute;
     top: 0;
@@ -31,7 +31,7 @@
   }
   
     
-    .hero-section .container {
+    .header .container {
       z-index: 2;
       position: relative;
     }
@@ -48,19 +48,19 @@
     }
     
     /* Aplica las animaciones */
-    .hero-section h1 {
+    .header h1 {
       animation: fadeInUp 1.5s ease-out;
     }
     
-    .hero-section p {
+    .header p {
       animation: fadeInUp 2s ease-out;
     }
     
-    .hero-section a {
+    .header a {
       animation: fadeInUp 2.5s ease-out;
     }
   
-    .hero-section .btn {
+    .header .btn {
       background-color: #2ECC71; /* Verde esmeralda */
       color: #FFFFFF; /* Blanco */
       border: none;
@@ -71,8 +71,12 @@
       transition: all 0.3s ease;
     }
     
-    .hero-section .btn:hover {
+    .header .btn:hover {
       background-color: #27AE60; /* Más oscuro al pasar el mouse */
       transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    }
+
+    .mt-33 {
+      color: #FFFFFF !important
     }
   

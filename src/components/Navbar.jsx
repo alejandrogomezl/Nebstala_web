@@ -58,8 +58,13 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <a className="navbar-brand logo" href="/">
-          {t('navbar.logo')}
+          <img 
+            src="/logo512.png" 
+            alt="Logo" 
+            className="navbar-logo"
+          />
         </a>
+
 
         {/* Botón de colapso para móviles */}
         <button

@@ -30,16 +30,12 @@
   }
   
   /* Logo */
-  .navbar-brand {
-    font-family: 'Lora', serif;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    transition: color 0.3s ease;
+  .navbar-logo {
+    height: 80px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Ajuste de imagen */
   }
   
-  .navbar-brand:hover {
-    color: #2ECC71; /* Verde esmeralda */
-  }
   
   /* Botón del selector de idioma */
   .dropdown-toggle {

@@ -3,6 +3,10 @@ import Header from '../components/domotics/Header';
 import IntroDomotics from '../components/domotics/IntroDomotics';
 import ClimateControl from '../components/domotics/ClimateControl';
 import SmartLocks from '../components/domotics/SmartLocks';
+import UserExperience from '../components/domotics/UserExperience';
+import SecuritySystem from '../components/domotics/SecuritySystem';
+import SystemControl from '../components/domotics/SystemControl';
+
 import '../css/domotics/DomoticsPage.css';
 
 const DomoticsPage = () => {
@@ -12,6 +16,9 @@ const DomoticsPage = () => {
       <IntroDomotics />
       <ClimateControl />
       <SmartLocks />
+      <UserExperience />
+      <SecuritySystem />
+      <SystemControl />
     </div>
   );
 };
