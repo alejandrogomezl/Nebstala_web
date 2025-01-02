@@ -6,7 +6,7 @@ const Header = () => {
   const { t } = useTranslation(); // Traducciones
 
   return (
-    <header className="hero-section d-flex align-items-center text-center text-white">
+    <header className="header d-flex align-items-center text-center text-white">
       <div className="container">
         {/* Título */}
         <h1 className="display-4 fw-bold" style={{ fontFamily: 'Lora, serif' }}>
@@ -14,7 +14,7 @@ const Header = () => {
         </h1>
 
         {/* Descripción */}
-        <p className="lead mt-3" style={{ fontFamily: 'Roboto, sans-serif' }}>
+        <p className="lead mt-3" style={{ fontFamily: 'Roboto, sans-serif', color: '#FFFFFF' }}>
           {t('domotics.description')}
         </p>
       </div>
