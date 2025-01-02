@@ -79,7 +79,7 @@ const ClimateControl = () => {
           <div className="col-lg-6 text-center">
             {imageLoaded ? (
               <img
-                src="/images/Climate.webp"
+                src="/images/Climate.jpg"
                 alt="Climate Control"
                 className="img-fluid climate-image"
                 onError={() => setImageLoaded(false)} // Si hay un error, desactiva la imagen
