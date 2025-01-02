@@ -1,46 +1,87 @@
-.navbar-logo {
-  height: 80px;
-}
+/* Navbar transparente al inicio */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+    color: #FFFFFF; /* Texto blanco */
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea sutil */
+  }
+  
+  /* Navbar al hacer scroll */
+  .navbar.scrolled {
+    background-color: #2C3E50; /* Azul medianoche sólido */
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Enlaces del Navbar */
+  .nav-link {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #2ECC71; /* Verde esmeralda */
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    height: 80px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Ajuste de imagen */
+  }
+  
+  
+  /* Botón del selector de idioma */
+  .dropdown-toggle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #2ECC71; /* Verde esmeralda */
+    color: #FFFFFF;
+  }
+  
+  /* Menú desplegable */
+  .dropdown-menu {
+    background-color: #2C3E50; /* Azul medianoche */
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dropdown-item {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #2ECC71; /* Verde esmeralda */
+    color: #FFFFFF;
+  }
 
-.navbar-toggler {
-  border: none;
-  background: none;
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.dropdown-menu {
-  position: absolute;
-  z-index: 1050;
-}
-
-.show {
-  display: block !important;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1rem;
-  padding: 10px 15px;
-}
-
-.btn-outline-light {
-  color: #ffffff !important;
-  border-color: #ffffff !important;
-}
-
-.btn-outline-light:hover {
-  background-color: #ffffff !important;
-  color: #2c3e50 !important;
-}
-
-.navbar-dark {
-  background-color: #2c3e50 !important;
-}
-
-.navbar-toggler-icon {
-  filter: invert(1); /* Hace el icono blanco */
-}
+  .navbar-toggler {
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+  }
+  

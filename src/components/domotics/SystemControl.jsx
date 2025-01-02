@@ -9,10 +9,10 @@ const SystemControl = () => {
 
   // Definir rutas de imágenes al principio
   const images = [
-    '/images/MacMockup.png',
-    '/images/iPhoneMockup.png',
-    '/images/Alexa.jpg',
-    '/images/Dashboard.jpg',
+    '/images/MacMockup.webp',
+    '/images/iPhoneMockup.webp',
+    '/images/Alexa.webp',
+    '/images/Dashboard.webp',
   ];
 
   // Estado para verificar si la imagen se ha cargado correctamente
