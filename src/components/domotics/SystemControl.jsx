@@ -9,8 +9,8 @@ const SystemControl = () => {
 
   // Definir rutas de imágenes al principio
   const images = [
-    '',
-    '',
+    '/images/MacMockup.png',
+    '/images/iPhoneMockup.png',
     '/images/Alexa.jpg',
     '/images/Dashboard.jpg',
   ];

@@ -56,7 +56,7 @@ const SecuritySystem = () => {
           <div className="col-lg-6 text-center">
             {imageLoaded ? (
               <img
-                src="/images/security-system.jpg"
+                src="/images/security.jpg"
                 alt="Security System"
                 className="img-fluid security-image"
                 onError={() => setImageLoaded(false)} // Si hay un error, desactiva la imagen
